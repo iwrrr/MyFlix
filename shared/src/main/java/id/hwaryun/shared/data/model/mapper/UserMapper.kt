@@ -2,7 +2,7 @@ package id.hwaryun.shared.data.model.mapper
 
 import id.hwaryun.shared.data.model.response.UserResponse
 import id.hwaryun.shared.data.model.viewparam.UserViewParam
-import id.hwaryun.shared.utils.ViewParamMapper
+import id.hwaryun.shared.utils.mapper.ViewParamMapper
 
 object UserMapper : ViewParamMapper<UserResponse, UserViewParam> {
 

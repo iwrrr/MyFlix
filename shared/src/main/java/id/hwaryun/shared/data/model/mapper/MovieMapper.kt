@@ -2,7 +2,7 @@ package id.hwaryun.shared.data.model.mapper
 
 import id.hwaryun.shared.data.model.response.MovieResponse
 import id.hwaryun.shared.data.model.viewparam.MovieViewParam
-import id.hwaryun.shared.utils.ViewParamMapper
+import id.hwaryun.shared.utils.mapper.ViewParamMapper
 
 object MovieMapper : ViewParamMapper<MovieResponse, MovieViewParam> {
 

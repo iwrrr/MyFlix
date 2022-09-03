@@ -9,7 +9,7 @@ interface BaseModule {
 interface FeatureModule : BaseModule {
     val repositories: Module
     val viewModels: Module
-    val dataSource: Module
+    val dataSources: Module
     val useCases: Module
     val network: Module
 }

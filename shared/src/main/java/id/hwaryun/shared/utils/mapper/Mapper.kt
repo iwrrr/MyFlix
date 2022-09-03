@@ -1,4 +1,4 @@
-package id.hwaryun.shared.utils
+package id.hwaryun.shared.utils.mapper
 
 interface Mapper<DTO, ViewParam>
 

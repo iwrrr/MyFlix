@@ -31,9 +31,7 @@ class NetworkClient(
             it.proceed(requestBuilder.build())
         }
 
-        // okhttp
         val okHttpClient = OkHttpClient.Builder()
-            // TODO: add auth interceptor
             .addInterceptor(chuckerInterceptor)
             .addInterceptor(authInterceptor)
             .connectTimeout(120, TimeUnit.SECONDS)
