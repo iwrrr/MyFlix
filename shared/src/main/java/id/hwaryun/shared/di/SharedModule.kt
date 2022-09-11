@@ -20,9 +20,16 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.Module
 import org.koin.dsl.module
 
-object SharedModules : BaseModule {
+object SharedModule : BaseModule {
 
-    override fun getModules(): List<Module> = listOf()
+    override fun getModules(): List<Module> = listOf(
+        remote,
+        local,
+        dataSource,
+        repository,
+        sharedUseCase,
+        common
+    )
 
     private val remote = module {
         single { ChuckerInterceptor.Builder(androidContext()).build() }

@@ -343,6 +343,4 @@
     <color name="bottom_sheet_bg">@color/on_top_view_color</color>
     <color name="ripple">#E5E5E5</color>
     <color name="divider">#6F6B6B</color>
-
-
 </resources>

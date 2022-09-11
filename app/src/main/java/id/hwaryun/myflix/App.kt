@@ -2,7 +2,7 @@ package id.hwaryun.myflix
 
 import android.app.Application
 import id.hwaryun.myflix.di.AppModule
-import id.hwaryun.shared.di.SharedModules
+import id.hwaryun.shared.di.SharedModule
 import id.hwaryun.splashscreen.di.SplashScreenModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -17,7 +17,7 @@ class App : Application() {
             androidContext(this@App)
             modules(
                 AppModule.getModules() +
-                        SharedModules.getModules() +
+                        SharedModule.getModules() +
                         SplashScreenModule.getModules()
             )
         }

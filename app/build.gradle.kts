@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = AndroidProjectConfig.compileSdk
 
     defaultConfig {
         applicationId = AndroidProjectConfig.applicationId
@@ -37,4 +37,6 @@ android {
 dependencies {
     implementation(project(":shared"))
     implementation(project(":feature:splashscreen"))
+    implementation(project(":feature:home"))
+    implementation(project(":feature:login"))
 }

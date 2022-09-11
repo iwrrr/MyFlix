@@ -41,7 +41,11 @@ android {
         create("production") {
             dimension = "default"
             buildConfigField("String", "BASE_URL", "\"http://75.101.213.57/\"")
-            buildConfigField("String", "APPLICATION_ID", "\"$AndroidProjectConfig.applicationId\"")
+            buildConfigField(
+                "String",
+                "APPLICATION_ID",
+                "\"${AndroidProjectConfig.applicationId}\""
+            )
         }
     }
 }
