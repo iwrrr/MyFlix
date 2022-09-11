@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/dev/android/bootcamp/netflix-clone/my-flix/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/dev/android/bootcamp/netflix-clone/my-flix/feature/login/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/dev/android/bootcamp/netflix-clone/my-flix/feature/splashscreen/src/main/res/layout/activity_splash_screen.xml" value="0.225" />
         <entry key="..\:/dev/android/bootcamp/netflix-clone/my-flix/styling/src/main/res/drawable/bg_bottom_sheet.xml" value="0.1" />
       </map>

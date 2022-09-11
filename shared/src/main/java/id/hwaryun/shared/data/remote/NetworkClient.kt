@@ -32,8 +32,8 @@ class NetworkClient(
         }
 
         val okHttpClient = OkHttpClient.Builder()
-            .addInterceptor(chuckerInterceptor)
             .addInterceptor(authInterceptor)
+            .addInterceptor(chuckerInterceptor)
             .connectTimeout(120, TimeUnit.SECONDS)
             .readTimeout(120, TimeUnit.SECONDS)
             .build()

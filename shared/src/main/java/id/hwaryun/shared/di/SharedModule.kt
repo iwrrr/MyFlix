@@ -15,6 +15,7 @@ import id.hwaryun.shared.data.repository.SharedApiRepositoryImpl
 import id.hwaryun.shared.data.repository.UserPreferenceRepository
 import id.hwaryun.shared.data.repository.UserPreferenceRepositoryImpl
 import id.hwaryun.shared.domain.GetUserTokenUseCase
+import id.hwaryun.shared.domain.SaveAuthDataUseCase
 import kotlinx.coroutines.Dispatchers
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.Module
@@ -53,6 +54,7 @@ object SharedModule : BaseModule {
 
     private val sharedUseCase = module {
         single { GetUserTokenUseCase(get(), Dispatchers.IO) }
+        single { SaveAuthDataUseCase(get(), Dispatchers.IO) }
     }
 
     private val common = module {

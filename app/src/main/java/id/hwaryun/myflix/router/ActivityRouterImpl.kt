@@ -12,6 +12,10 @@ class ActivityRouterImpl : ActivityRouter {
         return Intent(context, LoginActivity::class.java)
     }
 
+    override fun registerActivity(context: Context): Intent {
+        TODO("Not yet implemented")
+    }
+
     override fun homeActivity(context: Context): Intent {
         return Intent(context, HomeActivity::class.java)
     }

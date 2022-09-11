@@ -9,5 +9,6 @@ Github : https://github.com/hermasyp
  **/
 interface ActivityRouter {
     fun loginActivity(context: Context): Intent
+    fun registerActivity(context: Context): Intent
     fun homeActivity(context: Context): Intent
 }

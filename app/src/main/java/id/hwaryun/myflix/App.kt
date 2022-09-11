@@ -1,6 +1,7 @@
 package id.hwaryun.myflix
 
 import android.app.Application
+import id.hwaryun.login.di.LoginModule
 import id.hwaryun.myflix.di.AppModule
 import id.hwaryun.shared.di.SharedModule
 import id.hwaryun.splashscreen.di.SplashScreenModule
@@ -18,7 +19,8 @@ class App : Application() {
             modules(
                 AppModule.getModules() +
                         SharedModule.getModules() +
-                        SplashScreenModule.getModules()
+                        SplashScreenModule.getModules() +
+                        LoginModule.getModules()
             )
         }
     }
