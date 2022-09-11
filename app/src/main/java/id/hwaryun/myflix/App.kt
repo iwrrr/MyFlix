@@ -3,6 +3,7 @@ package id.hwaryun.myflix
 import android.app.Application
 import id.hwaryun.login.di.LoginModule
 import id.hwaryun.myflix.di.AppModule
+import id.hwaryun.register.di.RegisterModule
 import id.hwaryun.shared.di.SharedModule
 import id.hwaryun.splashscreen.di.SplashScreenModule
 import org.koin.android.ext.koin.androidContext
@@ -20,7 +21,8 @@ class App : Application() {
                 AppModule.getModules() +
                         SharedModule.getModules() +
                         SplashScreenModule.getModules() +
-                        LoginModule.getModules()
+                        LoginModule.getModules() +
+                        RegisterModule.getModules()
             )
         }
     }
